@@ -1,0 +1,23 @@
+1. Para criar nosso Job vamos precisar instalar alguns plugins no Jenkins, para estender as 
+funcioalidades dele. Para isso vá ein:
+1.1. Gerenciar Jenkins -> Gerenciar plugins -> Disponíveis
+1.2. Escreva Github no filtro de busca.
+1.3 Procure pelo plugin chamado GitHub Authentication. Esse plugin dá ao Jenkins permissões 
+no github.
+1.4. Clique em instalar sem reiniciar(install without restart).
+1.5. Após terminar de instalar o plugin volte para a página principal.
+
+2. Para criar um novo Job siga os passos:
+2.1. Clique em novo job.
+2.2. Dê um nome para seu job.
+2.3. Escolha uma das opções de job e clique em OK, no nosso caso vamos escolher 
+"Construir um projeto de software free-style" 
+2.4. Na página seguinte vá em "gerenciamento de código fonte" e escolha a opção Git.
+2.5. Cole em Repository URL a URL do seu repositório(do repositório que vc deseja 
+dar permissão para o Jenkins).
+OBS: as credenciais só serão necessárias se o seu repositório for um repositório privado.
+OBS2: Em Branch Specifier coloque a branch na qual o jenkins vai procurar na hora de construir 
+o software.
+2.6. Vá no topico Build -> Adicionar passo no build -> Executar shell, e coloque o comando: 
+javac math.java
+Após isso clique em Salvar.
