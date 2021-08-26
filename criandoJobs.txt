@@ -21,3 +21,47 @@ o software.
 2.6. Vá no topico Build -> Adicionar passo no build -> Executar shell, e coloque o comando: 
 javac math.java
 Após isso clique em Salvar.
+2.7. clique em "construir agora" e veja o build acontecendo na parte "histórico de builds".
+2.8. Ao clicar em uma build podemos ver todas as informações daquela build.
+2.9. Em saída do console podemos ver onde todos os arquivos, usados e gerados no build, são 
+gravados, veja o caminho do arquivo na linha de Building in workspace. 
+
+3. Trabalhando com variáveis de ambiente no Jenkins.
+3.1. Vá nas configurações do seu projeto e procure pela "lista de variaveis de ambiente 
+disponíveis", no tópico build. Lá vamos ver as variaveis de ambientes disponíveis.
+3.2. Por exemplo, no comando abaixo as informações que começam com $ são variáveis de ambiente. 
+echo Executando a job $JOB_NAME e a build de número $BUILD_NUMBER que está salva no Workspace $WORKSPACE.
+3.3 Após fazer alguma alteração clique em "Aplicar" e depois em "Salvar".
+
+4. Plugin do Jenkins para modificar o nome que aparece nas builds: 
+4.1. Instalar o plugin "Build Name and Description Setter".
+4.2. Após isso vá nas configurações do seu projeto no tópico de "Ambiente de Build" e 
+agora vai ter a opção "Set Build Name".
+4.3. Coloque o nome da build que preferir, por exemplo: ${JOB_NAME}_${BUILD_NUMBER}, e depois
+clique em Aplicar e Salvar.
+4.4 Construa um novo Build e veja a mudança no nome da Build.
+
+5. Plugin do Jenkins para saber quem está executando a Job, pois normalmente a pessoa que fez o 
+commit é diferente da pessoa que fez a build.
+5.1. Instalar o plugin "build user vars".
+5.2. Após isso vá nas configurações do seu projeto no tópico de "Ambiente de Build" e 
+agora vai ter a opção "Set Jenkins user build variables".
+4.3. Coloque uma das variaveis de ambiente que esse plugin adicionou, por exemplo ${BUILD_USER},
+juntando com o que já tinhamos antes ficamos com ${JOB_NAME}_${BUILD_NUMBER}_${BUILD_USER}.
+Após isso clique em Aplicar e Salvar.
+4.4 Construa um novo Build e veja a mudança no nome da Build.
+
+6. Habilitar o envio de emails, para que os líder técnicos, por exemplo, possam saber 
+quais Builds deram sucessos ou não.
+6.1. Gerenciar Jenkins -> Configurar o sistema -> Vá ao tópico Notificação de E-mail
+6.2. No campo "Servidor SMTP" coloque o serviço SMTP que seu gmail usa, no geral é: 
+smtp.gmail.com
+6.3. No campo "Sufixo padrão para e-mail de usuário" coloque: 
+@gmail.com ou a extensão do seu gmail.
+6.4. Clique em Avançado e em "Use SMTP Authentication" em seguida coloque o usuário e senha.
+6.5. Clique em "Usar SSL" e em Porta SMTP será a 465. 
+6.6. Clique em "Configuração de teste para enviar e-mail" e coloque seu email que irá 
+receber a mensagem de teste em "Test e-mail recipient", após isso clique em "Test configuration".
+6.7. Agora vá nas configurações do seu projeto(job) -> Ações de pós-build 
+-> Adicionar ação de pós-build -> Notificação de E-mail
+6.8.  
