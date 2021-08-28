@@ -64,4 +64,11 @@ smtp.gmail.com
 receber a mensagem de teste em "Test e-mail recipient", após isso clique em "Test configuration".
 6.7. Agora vá nas configurações do seu projeto(job) -> Ações de pós-build 
 -> Adicionar ação de pós-build -> Notificação de E-mail
-6.8.  
+6.8. Coloque seu email no campo Destinatários e clique em aplicar e salvar.
+6.9. Toda vez que algum Build der algum erro ou estiver instável, você receberá um email.
+
+7. Configurando builds automáticas, para isso vamos configurar o nosso projeto e o github para
+que toda vez que fizermos um merge na nossa branch main então seja feito um build 
+automáticamente no Jenkins.
+7.1. Para isso vai nas configurações do projeto Jenkins -> Trigger de 
+Builds -> GitHub hook trigger for GITScm polling
