@@ -72,3 +72,10 @@ que toda vez que fizermos um merge na nossa branch main então seja feito um bui
 automáticamente no Jenkins.
 7.1. Para isso vai nas configurações do projeto Jenkins -> Trigger de 
 Builds -> GitHub hook trigger for GITScm polling
+DIFICULDADES DESSE TÓPICO:
+1. O github não utiliza mais services nas suas configurações, ao invés disso foi trocado pelos
+webhooks, então segui esse tutorial ao invés de seguir o tutorial do curso
+https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project
+2. Colocar um IP publico na configuração do webhook.
+2.1. Para saber o IP público podemos usar esse link, https://whatismyipaddress.com/
+2.2. Redirecionar a porta do roteador para meu computador.
