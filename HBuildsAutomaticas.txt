@@ -1,0 +1,13 @@
+1. Configurando builds automáticas, para isso vamos configurar o nosso projeto e o github para
+que toda vez que fizermos um merge na nossa branch main então seja feito um build 
+automáticamente no Jenkins.
+1.1. Para isso vai nas configurações do projeto Jenkins -> Trigger de 
+Builds -> GitHub hook trigger for GITScm polling
+
+2. DIFICULDADES DESSE TÓPICO:
+2.1. O github não utiliza mais services nas suas configurações, ao invés disso foi trocado pelos
+webhooks, então segui esse tutorial ao invés de seguir o tutorial do curso
+https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project
+2.2 Colocar um IP publico na configuração do webhook.
+2.2. Para saber o IP público podemos usar esse link, https://whatismyipaddress.com/
+2.3. Redirecionar a porta do roteador para meu computador.

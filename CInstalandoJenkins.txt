@@ -1,0 +1,10 @@
+1. Um dos pré réquisitos para instalar o Jenkins é instalar o Java(JDK). Para instalar o JDK no 
+linux podemos usar o comando:
+-> sudo apt install default-jdk
+Esse comando também instalará o JRE:
+Caso queira saber mais sobre a instalação do Java, pode seguir esse tutorial.
+-> https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-pt
+
+2. Podemos instalar o Jenkins no Linux, Windows, MAC ou em containers. O link para a documentação 
+da instalação no Linux é:
+-> https://www.jenkins.io/doc/book/installing/linux/

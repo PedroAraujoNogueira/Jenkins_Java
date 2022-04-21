@@ -1,0 +1,16 @@
+6. Habilitar o envio de emails, para que os líder técnicos, por exemplo, possam saber 
+quais Builds deram sucessos ou não.
+6.1. Gerenciar Jenkins -> Configurar o sistema -> Vá ao tópico Notificação de E-mail
+6.2. No campo "Servidor SMTP" coloque o serviço SMTP que seu gmail usa, no geral é: 
+smtp.gmail.com
+6.3. No campo "Sufixo padrão para e-mail de usuário" coloque: 
+@gmail.com ou a extensão do seu gmail.
+6.4. Clique em Avançado e em "Use SMTP Authentication" em seguida coloque o usuário e senha.
+6.5. Clique em "Usar SSL" e em Porta SMTP será a 465. 
+6.6. Clique em "Configuração de teste para enviar e-mail" e coloque seu email que irá 
+receber a mensagem de teste em "Test e-mail recipient", após isso clique em "Test configuration".
+6.7. Agora vá nas configurações do seu projeto(job) -> Ações de pós-build 
+-> Adicionar ação de pós-build -> Notificação de E-mail
+6.8. Coloque seu email no campo Destinatários e clique em aplicar e salvar.
+6.9. Toda vez que algum Build der algum erro ou estiver instável, você receberá um email.
+

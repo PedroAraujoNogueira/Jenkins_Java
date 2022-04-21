@@ -1,0 +1,12 @@
+A integração contínua surgiu como parte das práticas da metodologia ágil. E assim 
+como na metodologia ágil o processo de CI deve ser feito em ciclos pequenos para
+que possíveis falhas sejam identificadas rápidamente e que a correção seja mais
+fácil de ser encontrada. 
+
+O processo de CI é importante para que a integração do novo código aconteça sem 
+causar nenhum problema ao código que já estava presente, garantindo qualidade 
+para o projeto e automatização de testes e processos de integração(como integração 
+com o GitHub para compilar código fonte).
+ 
+É importante que ao final do processo de CI sejam gerados relatorios ou avisos
+sobre o resultado do processo.

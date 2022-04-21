@@ -1,9 +1,9 @@
 O Jenkins é um software open-source(escrito em Java) de automação, que vai nos ajudar a 
 automatizar tarefas repetitivas(CI), como por exemplo: tarefas que envolvem a construção 
-e os testes de um software, inclusive nos enviando alertas caso algo não der certo ou 
-gerando relatórios. 
+de um software e os testes deste software, inclusive nos enviando alertas caso algo não 
+der certo ou gerando relatórios. 
 Logo o Jenkins aumenta a confiança nas novas versões do produto, pois diminui os riscos através 
 do monitoramento constante das alterações feitas no código.
 
-O Jenkins também nos ajudar com a entrega do software, onde podemos fazer a publicação do 
+O Jenkins também nos ajuda com a entrega do software, onde podemos fazer a publicação do 
 nosso software em diferentes ambientes.

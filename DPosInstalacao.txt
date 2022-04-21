@@ -1,0 +1,18 @@
+1. Para iniciar o serviço do Jenkins use o comando:
+systemctl start jenkins
+E para verificar o status, digite: 
+systemctl status jenkins
+É importante também verificarmos o status do nosso firewall:
+
+
+2. Com o serviço do Jenkins já startado, podemos acessá-lo através da porta 8080.
+http://localhost:8080/ OU o IPdaMaquina:8080
+
+3. Na primeira vez que estivermos acessando o jenkins vamos ter que pegar uma 
+senha configurada na pasta /var/lib/jenkins/secrets/initialAdminPassword,
+então podemos usar o comando:
+cat /var/lib/jenkins/secrets/initialAdminPassword
+Após isso vamos instalar os plugins sugeridos(install suggested plugins)
+Os plugins extendem o funcionamento do jenkins
+
+4. Após instalar os plugins vamos ter que criar nosso primeiro usuário administrador.
