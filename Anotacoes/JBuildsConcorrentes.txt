@@ -1,0 +1,3 @@
+1. Para vermos a quantidade de builds concorrentes que podemos fazer, basta ir em:
+Gerenciar Jenkins -> Configurar o sistema -> Número de executores
+Nesse parametros podemos definir quantos builds concorrentes poderemos fazer.
